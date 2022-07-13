@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+## Digital Cameras and tuning
 
-You can use the [editor on GitHub](https://github.com/skris08/camera/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Digital cameras are widely employed in numerous applications, such as 
+1. advanced still cameras,
+2. camcorders,
+3. camera telephones, and 
+4. video observations.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The camera which captures sensible images with adjusted parameters:
 
 ```markdown
-Syntax highlighted code block
+saturation,
+brightness,
+contrast,
+```
+and so forth bringing about top notch picture is driving in the market.
 
-# Header 1
-## Header 2
-### Header 3
+## Camera frameworks
 
-- Bulleted
-- List
+```markdown
+The objective of a Camera framework is to capture a scene and imitate the caught scene in a digital format.
+The Camera Sensor incorporates lens, color filter array (Bayer) and a image sensor.
+The Bayer sensor filters the light by wavelength range, such that the separate filtered intensities include information about the color of light which are captured in the light bucket and then the ADC converts the electronic signals into digital signals recreating the RAW picture.
+The block diagram shows how a scene is seen on the camera sensor and how it is handled to get a raw image from the image sensor.
+```
+![camera-sensor](/digital_camera/docs/assets/images/camera_sensor.png)
 
-1. Numbered
-2. List
+## Phases in camera tuning
 
-**Bold** and _Italic_ and `Code` text
+Camera Tuning is a critical step in developing a digital camera product.
+It is a procedure to adjust and set camera working boundaries that create excellent pictures.
+This can be a complex strategy which covers the accompanying,
 
-[Link](url) and ![Image](src)
+```markdown
+Initial / Objective Tuning
+3A Tuning
+Fine /  Subjective Tuning
+Image quality analysis
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Camera Initial tuning
 
-### Jekyll Themes
+The image processor, which takes raw data produced by the camera sensor and generates a
+digital image which can be viewed or experience further handling, 
+is a series of specialized algorithms that changes the image continuously in real-time.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/skris08/camera/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+The Initial tuning of the camera sensor goes through the following procedures, 
+1. Acquisition of images at controlled illumination with different charts and objects based on the test cases.
+2. Tuning (an ISP) or adjusting an image signal processor to optimize the image quality. 
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+![isp](/digital_camera/docs/assets/images/isp.png)
